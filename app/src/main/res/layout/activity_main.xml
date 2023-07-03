@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFE4D2"
+
+    tools:context=".MainActivity">
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/constraintLayout"-->
+<!--        android:layout_width="392dp"-->
+<!--        android:layout_height="810dp"-->
+<!--        android:layout_marginBottom="157dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.025"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/textView"-->
+        <!--                    android:layout_width="145dp"-->
+        <!--                    android:layout_height="48dp"-->
+        <!--                    android:fontFamily="@font/nerkoone"-->
+        <!--                    android:text="Cancer"-->
+        <!--                    android:textColor="#5D6C75"-->
+        <!--                    android:textSize="35dp"-->
+        <!--                    android:textStyle="bold"-->
+        <!--                    app:layout_constraintBottom_toTopOf="@+id/lung"-->
+        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                    app:layout_constraintHorizontal_bias="0.894"-->
+        <!--                    app:layout_constraintStart_toStartOf="parent"-->
+        <!--                    app:layout_constraintTop_toTopOf="parent"-->
+        <!--                    app:layout_constraintVertical_bias="0.004" />-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/textView2"-->
+        <!--                    android:layout_width="140dp"-->
+        <!--                    android:layout_height="42dp"-->
+        <!--                    android:fontFamily="@font/nerkoone"-->
+        <!--                    android:text="Diagnosis"-->
+        <!--                    android:textSize="35dp"-->
+        <!--                    android:textStyle="bold"-->
+        <!--                    app:layout_constraintBottom_toTopOf="@+id/text3"-->
+        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                    app:layout_constraintHorizontal_bias="0.983"-->
+        <!--                    app:layout_constraintStart_toStartOf="parent"-->
+        <!--                    app:layout_constraintTop_toTopOf="@+id/textView"-->
+        <!--                    app:layout_constraintVertical_bias="0.961" />-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/text3"-->
+        <!--                    android:layout_width="123dp"-->
+        <!--                    android:layout_height="40dp"-->
+        <!--                    android:layout_marginTop="92dp"-->
+        <!--                    android:fontFamily="@font/nerkoone"-->
+        <!--                    android:text="System"-->
+        <!--                    android:textSize="35dp"-->
+        <!--                    android:textStyle="bold"-->
+        <!--                    app:layout_constraintBottom_toTopOf="@+id/parent"-->
+        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                    app:layout_constraintHorizontal_bias="0.936"-->
+        <!--                    app:layout_constraintStart_toStartOf="parent"-->
+        <!--                    app:layout_constraintTop_toTopOf="parent"-->
+        <!--                    app:layout_constraintVertical_bias="0.415"-->
+        <!--                    tools:ignore="ExtraText" />-->
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="398dp"
+        android:layout_height="359dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_icon" />
+
+    <Button
+        android:id="@+id/brain"
+        android:layout_width="155dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/lung"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/btn_shap"
+        android:drawableStart="@drawable/brain"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="start|center_vertical"
+        android:paddingHorizontal="5dp"
+        android:text="  Brain"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/lung"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/lung"
+        android:layout_width="155dp"
+        android:layout_height="59dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/btn_shap"
+        android:drawableStart="@drawable/lung"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="start|center_vertical"
+        android:paddingHorizontal="5dp"
+        android:text="   Lung"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/skin"
+        android:layout_width="155dp"
+        android:layout_height="59dp"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/btn_shap"
+        android:drawableStart="@drawable/skin"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="start|center_vertical"
+        android:paddingHorizontal="5dp"
+        android:text="   Skin"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lung" />
+
+    <Button
+        android:id="@+id/blood"
+        android:layout_width="155dp"
+        android:layout_height="59dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/btn_shap"
+        android:drawableStart="@drawable/blood"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="start|center_vertical"
+        android:paddingHorizontal="5dp"
+        android:text="  BLood"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skin" />
+
+    <Button
+        android:id="@+id/breast"
+        android:layout_width="155dp"
+        android:layout_height="59dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/btn_shap"
+        android:drawableStart="@drawable/breast"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="start|center_vertical"
+        android:paddingHorizontal="5dp"
+        android:text="Breast"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/skin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brain" />
+
+    <Button
+        android:id="@+id/colon"
+        android:layout_width="155dp"
+        android:layout_height="59dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/btn_shap"
+        android:drawableStart="@drawable/colon"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="start|center_vertical"
+        android:paddingHorizontal="5dp"
+        android:text="  Colon"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/blood"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breast" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Choose your cancer type"
+        android:textColor="#3D5656"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
